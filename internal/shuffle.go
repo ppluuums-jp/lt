@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 )
 
@@ -31,7 +30,7 @@ func Shuffle(cmd *cobra.Command, args []string) error {
 
 	// Output the presenters
 	for i, p := range presenters {
-		color.New(color.FgHiYellow).Printf("No. %d %s\n", i+1, p.Name)
+		fmt.Printf("No. %d %s\n", i+1, p.Name)
 		time.Sleep(750 * time.Millisecond)
 
 	}

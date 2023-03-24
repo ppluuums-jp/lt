@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 )
 
@@ -41,7 +40,7 @@ func Pick(cmd *cobra.Command, args []string) error {
 
 	// Output the presenters
 	for _, p := range presenters {
-		color.New(color.FgHiYellow).Printf("- %s\n", p.Name)
+		fmt.Printf("- %s\n", p.Name)
 		<-time.Tick(750 * time.Millisecond)
 	}
 
