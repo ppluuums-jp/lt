@@ -10,7 +10,7 @@ func LtCommand() *cobra.Command {
 		Short:                 "A tiny tool for managing lighting talks",
 		TraverseChildren:      true,
 		DisableFlagsInUseLine: true,
-		Version:               "v1.0.0",
+		Version:               "v1.0.2",
 	}
 	return cmd
 }
