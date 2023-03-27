@@ -31,8 +31,7 @@ func Shuffle(cmd *cobra.Command, args []string) error {
 	// Output the presenters
 	for i, p := range presenters {
 		fmt.Printf("No. %d %s\n", i+1, p.Name)
-		time.Sleep(750 * time.Millisecond)
-
+		<-time.Tick(750 * time.Millisecond)
 	}
 
 	return nil
