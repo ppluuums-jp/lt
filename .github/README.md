@@ -2,6 +2,8 @@
 
 For a lighting talk event.
 
+![lt-cli](https://user-images.githubusercontent.com/104049111/227819809-f6611e5d-607a-46fa-b382-9b5e2bdba9f6.gif)
+
 # Installation
 
 ```
